@@ -82,7 +82,7 @@ h6 {
 .left-footer-block{
     margin-right: 10%;
 }
-a {
+.footer-li a {
     text-decoration: none;
     color: #CBCFD4!important;
 }
@@ -181,10 +181,18 @@ a {
     color: #FFFFFF;
 }
 
-input[type='button'] {
+.button-watch-all {
     background: #D7B399;
     text-transform: uppercase;
     color: #FFFFFF;
+    width: 240px;
+    height: 55px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    border: none;
+    margin-top: 40px;
 }
 
 .row {
@@ -194,6 +202,7 @@ input[type='button'] {
 input[type='text'] {
     height: 40px;
     width: 255px;
+    padding-left:10px;
 }
 
 .button-all-models {
@@ -201,14 +210,23 @@ input[type='text'] {
     height: 55px;
     border: none;
     margin-top:60px;
-}
-.button-all-models{
-
+    background: #D7B399;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    text-transform: uppercase;
 }
 .button-subscribe {
     height: 40px;
     width: 185px;
     border: none;
+    background: #D7B399;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    text-transform: uppercase;
 }
 
 .sales-block {
@@ -227,10 +245,12 @@ input[type='text'] {
 
 /*header*/
 .header{
-    height: 800px;
+    height: 700px;
     background: #F9F6F1;
-    margin:auto;
     flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /*menu*/
 .menu{
@@ -244,10 +264,26 @@ input[type='text'] {
     width: 201px;
     height: 40px;
 }
+a{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.03em;
+    color: black!important;
+}
+a:hover{
+    text-decoration: none!important;
+}
+li{
+    margin-right: 20px;
+}
 .basket{
     background: url("./img/first-screen__basket.png") no-repeat;
     width: 91px;
     height: 30px;
+}
+.nav-tabs{
+    border:none!important;
 }
 .ul-header{
     list-style: none;
@@ -255,10 +291,56 @@ input[type='text'] {
     flex-direction: row;
 }
 /*carousel*/
-.carousel-img{
-    background: url("./img/first-screen__image.png")no-repeat;
+.carousel-indicators{
+    top: 480px!important;
+
+}
+
+.carousel-indicators .active{
+    background-color: #D7B399!important;
+}
+.carousel-indicators li{
+    width: 40px!important;
+    height: 7px!important;
+    margin-right: 5px!important;
+    margin-left: 5px!important;
+    background-color: #CECECE!important;
+}
+.carousel-tovar{
+    background: #F9F6F1;
     width: 556px;
     height: 377px;
+}
+.carousel-img{
+    background: url("img/running_shoes_PNG5823 (1).png") no-repeat;
+    width: 556px;
+    height: 377px;
+}
+.carousel-price{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10%;
+    right: 0;
+}
+.old-price{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-decoration-line: line-through;
+    text-transform: uppercase;
+    color: #000000;
+}
+.new-price{
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 51px;
+    text-align: right;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #D84033;
 }
 .carousel-block{
     display: flex!important;
@@ -379,8 +461,26 @@ input[type='text'] {
 /**/
 .tovar-examples{
     height: 236px;
-    background: #0c5460 ;
+}
+.tovar-examples-text{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    color: #000000;
+    text-transform: uppercase;
+
 }
 .t-shirt{
     background: url("./img/Rectangle 3.png") no-repeat;
+}
+.blue-background{
+    background: #F4F4F4;
+}
+.pink-background{
+    background: #F9F6F1;
+}
+.ul-soc{
+    padding: 0 23px;
 }
